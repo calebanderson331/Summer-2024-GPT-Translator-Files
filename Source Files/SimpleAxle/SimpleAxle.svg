@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="283px" preserveAspectRatio="none" style="width:381px;height:283px;background:#FFFFFF;" version="1.1" viewBox="0 0 381 283" width="381px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:c1c32af9-0631-4604-b608-8587b19c7509" target="_top" title="psysml:c1c32af9-0631-4604-b608-8587b19c7509" xlink:actuate="onRequest" xlink:href="psysml:c1c32af9-0631-4604-b608-8587b19c7509" xlink:show="new" xlink:title="psysml:c1c32af9-0631-4604-b608-8587b19c7509" xlink:type="simple"><polygon fill="none" points="16,6,111,6,118,29.6094,364,29.6094,364,276,16,276,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="118" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="20" y="22.5332">AxlePackage</text></a></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><a href="psysml:89fbd27f-ff64-4426-b8ad-cb27f46fea55" target="_top" title="psysml:89fbd27f-ff64-4426-b8ad-cb27f46fea55" xlink:actuate="onRequest" xlink:href="psysml:89fbd27f-ff64-4426-b8ad-cb27f46fea55" xlink:show="new" xlink:title="psysml:89fbd27f-ff64-4426-b8ad-cb27f46fea55" xlink:type="simple"><g id="elem_E2"><rect fill="#FFFFFF" height="79.3563" id="E2" style="stroke:#181818;stroke-width:0.5;" width="153" x="113.5" y="181"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="161" y="198.457">«part  def»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="177" y="215.627">Axle</text><line style="stroke:#181818;stroke-width:0.5;" x1="114.5" x2="265.5" y1="223.7031" y2="223.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="119.5" y="253.2801">mass:&gt;ISQBase::mass</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="160.5" y="236.9316">attributes</text></g></a><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><a href="psysml:5aa10049-6fc9-4048-ac3c-2393b133bd64" target="_top" title="psysml:5aa10049-6fc9-4048-ac3c-2393b133bd64" xlink:actuate="onRequest" xlink:href="psysml:5aa10049-6fc9-4048-ac3c-2393b133bd64" xlink:show="new" xlink:title="psysml:5aa10049-6fc9-4048-ac3c-2393b133bd64" xlink:type="simple"><g id="elem_E3"><rect fill="#FFFFFF" height="79.3563" id="E3" style="stroke:#181818;stroke-width:0.5;" width="316" x="32" y="42"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="161" y="59.457">«part  def»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="160" y="76.627">FrontAxle</text><line style="stroke:#181818;stroke-width:0.5;" x1="33" x2="347" y1="84.7031" y2="84.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="38" y="114.2801">steeringAngle:&gt;ISQSpaceTime::angularMeasure</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="160.5" y="97.9316">attributes</text></g></a><!--MD5=[05d275557350bfb9b23a4ef7222b4c39]
+link E3 to E2--><g id="link_E3_E2"><a href="psysml:7c092c9f-207b-4019-96f2-05e23d5c36ea" target="_top" title="psysml:7c092c9f-207b-4019-96f2-05e23d5c36ea" xlink:actuate="onRequest" xlink:href="psysml:7c092c9f-207b-4019-96f2-05e23d5c36ea" xlink:show="new" xlink:title="psysml:7c092c9f-207b-4019-96f2-05e23d5c36ea" xlink:type="simple"><path d="M190,121.03 C190,133.28 190,147.14 190,160.5 " fill="none" id="E3-to-E2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="197,160.79,190,180.79,183,160.79,197,160.79" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[8e09a904b57f1b774323170044b6ce95]
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+package "AxlePackage" as E1  [[psysml:c1c32af9-0631-4604-b608-8587b19c7509 ]]  {
+comp def "Axle" as E2  <<(T,blue) part  def>> [[psysml:89fbd27f-ff64-4426-b8ad-cb27f46fea55 ]] {
+##//attributes//##
+mass:>ISQBase::mass
+}
+comp def "FrontAxle" as E3  <<(T,blue) part  def>> [[psysml:5aa10049-6fc9-4048-ac3c-2393b133bd64 ]] {
+##//attributes//##
+steeringAngle:>ISQSpaceTime::angularMeasure
+}
+}
+E3 - -|> E2 [[psysml:7c092c9f-207b-4019-96f2-05e23d5c36ea ]] 
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 13:01:30 EDT 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
