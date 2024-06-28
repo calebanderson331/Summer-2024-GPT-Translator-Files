@@ -1,2 +1,0 @@
-
-The MassRequirement defines a condition where the actual mass must not exceed the required mass. It involves two key measurements: massRequired, which denotes the maximum permissible mass, and massActual, which indicates the current mass. This requirement ensures that the current mass remains within the specified limit by comparing these two values. This approach ensures that the system's actual mass is consistently within the acceptable range.

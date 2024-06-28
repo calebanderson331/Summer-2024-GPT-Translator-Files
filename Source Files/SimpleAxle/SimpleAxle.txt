@@ -1,2 +1,0 @@
-The axle system consists of two parts: the axle and the front axle. The basic axle has an attribute called "mass," which indicates how much it weighs. The front axle is a specialized version of the axle that not only has the "mass" attribute but also includes an additional feature called "steering angle." This steering angle attribute shows how the front axle can turn to steer the vehicle. In summary, while the axle provides the necessary support by carrying weight, the front axle adds the ability to steer, making it crucial for controlling the vehicle's direction.
-
