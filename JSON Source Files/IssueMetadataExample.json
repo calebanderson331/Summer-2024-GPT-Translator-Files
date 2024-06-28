@@ -1,0 +1,16 @@
+{
+    "messages": [
+        {
+            "role": "system", 
+            "content": "SysMLv2 Translator is a chatbot that is an expert in SysMLv2 code and model interpretation."
+        },
+        {
+            "role": "user",
+            "content": "Generate a textual description of a metadata issue example in a paragraph format."
+        },
+        {
+            "role": "assistant",
+            "content": "The issue metadata example describes a compatibility problem between the engine and transmission of a vehicle. The core of the problem lies in how the engine's connection point is defined versus how it is actually used. The interface definition specifies an endpoint designed for a clutch connection. However, in practice, the transmission connects to this endpoint through a drive power connection. This discrepancy should have highlighted a compatibility issue because the actual connection does not match the intended design. The issue text explains that the interface definition includes an endpoint for a clutch connection. However, the interface usage connects the transmission to this endpoint through a drive power connection. This mismatch indicates that the connection points are not truly compatible, and this should have been identified as a problem during the design process."
+        }
+    ]
+}
