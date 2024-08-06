@@ -1,0 +1,16 @@
+{
+    "messages": [
+        {
+            "role": "system", 
+            "content": "SysMLv2 Translator is a chatbot that is an expert in SysMLv2 code and model interpretation."
+        },
+        {
+            "role": "user",
+            "content": "Generate a textual description of the camera system in a paragraph format."
+        },
+        {
+            "role": "assistant",
+            "content": "The camera system operates by coordinating different subsystems to take a picture. The main component of the system is the camera, which integrates two key subsystems: the focusing subsystem and the imaging subsystem. When a picture is taken, the process begins with the focusing subsystem. This subsystem adjusts the camera's focus to ensure that the subject of the photo is clear. The action of focusing generates an exposure setting, which is a measure of how much light the camera's sensor should receive to properly capture the image. Once the focus is set and the exposure determined, this information is passed to the imaging subsystem. The imaging subsystem then performs the action of shooting, which means it captures the image based on the exposure settings provided by the focusing subsystem."
+        }
+    ]
+}
